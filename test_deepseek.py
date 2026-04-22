@@ -25,7 +25,7 @@ messages = [
 		html_content = response.choices[0].message.content
 		with open("gomoku.html", "w", encoding="utf-8") as f:
 			f.write(html_content)
-#	        print("gomoku.html created")
+
 	else:
 		print("No response returned")
 except Exception as e:
